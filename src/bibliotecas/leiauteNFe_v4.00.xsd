@@ -773,7 +773,7 @@ de recepção da NF-e indicada pelo destinatário</xs:documentation>
 						</xs:element>
 						<xs:element maxOccurs="990" name="det">
 							<xs:annotation>
-								<xs:documentation>Dados dos detalhes da NF-e</xs:documentation>
+								<xs:documentation>Dados dos alhes da NF-e</xs:documentation>
 							</xs:annotation>
 							<xs:complexType>
 								<xs:sequence>

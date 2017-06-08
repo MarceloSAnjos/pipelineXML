@@ -22,7 +22,7 @@ public class GeradorJAXB {
     private static final String FILE_NAME = "jaxb-emp.xml";
 
     public static void main(String[] args) {
-        notaFiscal emp = new notaFiscal();
+        IdentificadorNFe emp = new IdentificadorNFe();
         //SETAR OS VALORES
         
         jaxbObjectToXML(emp);
@@ -34,10 +34,10 @@ public class GeradorJAXB {
   
 
 
-    private static void jaxbObjectToXML(notaFiscal nota) {
+    private static void jaxbObjectToXML(IdentificadorNFe nota) {
 
         try {
-            JAXBContext context = JAXBContext.newInstance(notaFiscal.class);
+            JAXBContext context = JAXBContext.newInstance(IdentificadorNFe.class);
             Marshaller m = context.createMarshaller();
             //for pretty-print XML in JAXB
             m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);

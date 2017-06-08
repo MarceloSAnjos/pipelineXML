@@ -9,7 +9,7 @@ package pipelinexml;
  *
  * @author maeda
  */
-public class notaFiscal {
+public class IdentificadorNFe {
     
     /**
      * 
@@ -19,7 +19,7 @@ public class notaFiscal {
      *      
      */
     
-    public notaFiscal(){};
+    public IdentificadorNFe(){};
     
     private String TNFe; // Tipo de nota fiscal eletrônica
     private String infNFe; // Informações da nota fiscal eletrônica
