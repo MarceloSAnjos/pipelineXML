@@ -12,5 +12,7 @@ package pipelinexml;
 public class DetalhesNFe {
     
     private String nItem; // Numero do item
+    private ImpostoNFe imposto;
+    private InformacaoAdicionalNFe infAdProd;
     
 }

@@ -15,5 +15,7 @@ public class ImpostoNFe {
     private IpiNFe IPI;
     private PisNFe PIS;
     private CofinsNFe COFINS;
+    private IcmsUfDest ICMSUFDest;
+    
     
 }
