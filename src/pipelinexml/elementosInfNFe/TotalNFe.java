@@ -5,7 +5,7 @@
  */
 package pipelinexml.elementosInfNFe;
 
-import pipelinexml.total.IcmsTotal;
+import pipelinexml.elementosInfNFe.Total.IcmsTotal;
 
 /**
  *

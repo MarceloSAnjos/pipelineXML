@@ -5,12 +5,12 @@
  */
 package pipelinexml.elementosInfNFe;
 
-import pipelinexml.detalhes.InformacaoAdicionalDet;
-import pipelinexml.detalhes.ImpostoNFe;
-import pipelinexml.detalhes.ImpostoNFe;
-import pipelinexml.detalhes.ImpostoNFe;
-import pipelinexml.detalhes.InformacaoAdicionalDet;
-import pipelinexml.detalhes.InformacaoAdicionalDet;
+import pipelinexml.elementosInfNFe.Detalhes.InformacaoAdicionalDet;
+import pipelinexml.elementosInfNFe.Detalhes.ImpostoNFe;
+import pipelinexml.elementosInfNFe.Detalhes.ImpostoNFe;
+import pipelinexml.elementosInfNFe.Detalhes.ImpostoNFe;
+import pipelinexml.elementosInfNFe.Detalhes.InformacaoAdicionalDet;
+import pipelinexml.elementosInfNFe.Detalhes.InformacaoAdicionalDet;
 
 /**
  *

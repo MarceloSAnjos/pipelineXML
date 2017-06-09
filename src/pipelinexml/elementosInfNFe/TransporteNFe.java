@@ -5,19 +5,19 @@
  */
 package pipelinexml.elementosInfNFe;
 
-import pipelinexml.transporte.VolumeNFe;
-import pipelinexml.transporte.TransportadoraNFe;
+import pipelinexml.elementosInfNFe.Transporte.VolumeNFe;
+import pipelinexml.elementosInfNFe.Transporte.TransportadoraNFe;
 
 /**
  *
  * @author maeda
  */
-public class Transporte {
+public class TransporteNFe {
     
     private TransportadoraNFe transporta;
     private VolumeNFe vol;
 
-    public Transporte(TransportadoraNFe transporta, VolumeNFe vol) {
+    public TransporteNFe(TransportadoraNFe transporta, VolumeNFe vol) {
         this.transporta = transporta;
         this.vol = vol;
     }

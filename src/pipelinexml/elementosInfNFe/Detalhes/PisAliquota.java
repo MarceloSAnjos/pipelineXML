@@ -3,24 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pipelinexml.detalhes;
+package pipelinexml.elementosInfNFe.Detalhes;
 
 /**
  *
  * @author maeda
  */
-public class CofinsAliq {
+public class PisAliquota {
     
     private String CST;
     private String vBC;
-    private String pCOFINS;
-    private String vCOFINS;
+    private String pPIS;
+    private String vPIS;
 
-    public CofinsAliq(String CST, String vBC, String pCOFINS, String vCOFINS) {
+    public PisAliquota(String CST, String vBC, String pPIS, String vPIS) {
         this.CST = CST;
         this.vBC = vBC;
-        this.pCOFINS = pCOFINS;
-        this.vCOFINS = vCOFINS;
+        this.pPIS = pPIS;
+        this.vPIS = vPIS;
     }
 
     public String getCST() {
@@ -39,20 +39,20 @@ public class CofinsAliq {
         this.vBC = vBC;
     }
 
-    public String getpCOFINS() {
-        return pCOFINS;
+    public String getpPIS() {
+        return pPIS;
     }
 
-    public void setpCOFINS(String pCOFINS) {
-        this.pCOFINS = pCOFINS;
+    public void setpPIS(String pPIS) {
+        this.pPIS = pPIS;
     }
 
-    public String getvCOFINS() {
-        return vCOFINS;
+    public String getvPIS() {
+        return vPIS;
     }
 
-    public void setvCOFINS(String vCOFINS) {
-        this.vCOFINS = vCOFINS;
+    public void setvPIS(String vPIS) {
+        this.vPIS = vPIS;
     }
     
     

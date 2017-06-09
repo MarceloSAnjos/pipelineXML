@@ -5,7 +5,7 @@
  */
 package pipelinexml.elementosInfNFe;
 
-import pipelinexml.informacaoAdicional.InformacaoComplementar;
+import pipelinexml.elementosInfNFe.InformacaoAdicional.InformacaoComplementar;
 
 /**
  *
