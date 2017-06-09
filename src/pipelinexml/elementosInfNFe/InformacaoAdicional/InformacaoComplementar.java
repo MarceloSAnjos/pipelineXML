@@ -11,18 +11,18 @@ package pipelinexml.elementosInfNFe.InformacaoAdicional;
  */
 public class InformacaoComplementar {
     
-    private String informacaoCompl;
+    private String infCpl;
 
     public InformacaoComplementar(String informacaoCompl) {
-        this.informacaoCompl = informacaoCompl;
+        this.infCpl = informacaoCompl;
     }
 
     public String getInformacaoCompl() {
-        return informacaoCompl;
+        return infCpl;
     }
 
     public void setInformacaoCompl(String informacaoCompl) {
-        this.informacaoCompl = informacaoCompl;
+        this.infCpl = informacaoCompl;
     }
     
     
