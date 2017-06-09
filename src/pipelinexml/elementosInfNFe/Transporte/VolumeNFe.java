@@ -11,9 +11,9 @@ package pipelinexml.elementosInfNFe.Transporte;
  */
 public class VolumeNFe {
     
-    private String qVol = "1"; //Quantidade de volumes
-    private String pesoL = "0.690"; // Peso Liquido
-    private String pesoB = "0.690"; // Peso Bruto
+    private String qVol; //Quantidade de volumes
+    private String pesoL; // Peso Liquido
+    private String pesoB; // Peso Bruto
 
   
     public String getqVol() {
@@ -39,6 +39,14 @@ public class VolumeNFe {
     public void setPesoB(String pesoB) {
         this.pesoB = pesoB;
     }
+
+    public VolumeNFe(String qVol, String pesoL, String pesoB) {
+        this.qVol = qVol;
+        this.pesoL = pesoL;
+        this.pesoB = pesoB;
+    }
+    
+    
     
     
     

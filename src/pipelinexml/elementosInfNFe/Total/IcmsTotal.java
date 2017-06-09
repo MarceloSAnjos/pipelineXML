@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -30,6 +31,29 @@ public class IcmsTotal {
     private String vOutro;
     private String vNF;
 
+    public IcmsTotal(String vBC, String vICMS, String vICMSDeson, String vFCPUFDest, String vICMSUFDest, String vICMSUFRemt, String vBCST, String vST, String vProd, String vFrete, String vSeg, String vDesc, String vII, String vIPI, String vPIS, String vCOFINS, String vOutro, String vNF) {
+        this.vBC = vBC;
+        this.vICMS = vICMS;
+        this.vICMSDeson = vICMSDeson;
+        this.vFCPUFDest = vFCPUFDest;
+        this.vICMSUFDest = vICMSUFDest;
+        this.vICMSUFRemt = vICMSUFRemt;
+        this.vBCST = vBCST;
+        this.vST = vST;
+        this.vProd = vProd;
+        this.vFrete = vFrete;
+        this.vSeg = vSeg;
+        this.vDesc = vDesc;
+        this.vII = vII;
+        this.vIPI = vIPI;
+        this.vPIS = vPIS;
+        this.vCOFINS = vCOFINS;
+        this.vOutro = vOutro;
+        this.vNF = vNF;
+    }
+
+    
+    
     
 
     public String getvBC() {

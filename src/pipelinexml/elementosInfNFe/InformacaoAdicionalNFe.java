@@ -15,6 +15,10 @@ public class InformacaoAdicionalNFe {
 
     private InformacaoComplementar infCpl = new InformacaoComplementar();
 
+    public InformacaoAdicionalNFe() {
+    }
+    
+
 
     public InformacaoComplementar getInfCpl() {
         return infCpl;
