@@ -20,25 +20,22 @@ import javax.xml.bind.Unmarshaller;
  */
 public class GeradorJAXB {
     
-    private static final String FILE_NAME = "jaxb-emp.xml";
+    private static final String FILE_NAME = "notaComJAXB.xml";
+    
+    private static NotaCompletaNFe nfeProc = new NotaCompletaNFe();
 
-    public static void main(String[] args) {
-        IdentificadorNFe emp = new IdentificadorNFe();
-        //SETAR OS VALORES
+
+    public GeradorJAXB(){
         
-        jaxbObjectToXML(emp);
-
-
+        jaxbObjectToXML(nfeProc);
+        
     }
 
 
-  
-
-
-    private static void jaxbObjectToXML(IdentificadorNFe nota) {
+    private static void jaxbObjectToXML(NotaCompletaNFe nota) {
 
         try {
-            JAXBContext context = JAXBContext.newInstance(IdentificadorNFe.class);
+            JAXBContext context = JAXBContext.newInstance(NotaCompletaNFe.class);
             Marshaller m = context.createMarshaller();
             //for pretty-print XML in JAXB
             m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);

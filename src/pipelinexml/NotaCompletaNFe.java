@@ -9,7 +9,13 @@ package pipelinexml;
  *
  * @author maeda
  */
+
+import javax.xml.bind.annotation.*;
+
+
+@XmlRootElement(name = "nota")
 public class NotaCompletaNFe {
+
     
     private NotaFiscalEletronica NFe = new NotaFiscalEletronica();
     private ProtocoloNFe protNFe = new ProtocoloNFe();

@@ -19,10 +19,14 @@ public class PipelineXML {
     
     private static GeradorXstream geradorx;
     
+    private static GeradorJAXB geradorj;
+    
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
         
         geradorx = new GeradorXstream();
+        
+        geradorj = new GeradorJAXB();
     }
     
 }
