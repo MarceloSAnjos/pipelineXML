@@ -11,6 +11,8 @@ package pipelinexml.elementosSignature;
  */
 public class Reference {
     
+    public Reference(){};
+    
     private Transforms Transform;
     private String DigestMethod;
     private String DigestValue;

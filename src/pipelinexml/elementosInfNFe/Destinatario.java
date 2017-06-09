@@ -13,12 +13,14 @@ public class Destinatario {
     
     private String xNome; // Razão Social ou Nome
     private String CPF; // CPF do destinatario
+    private Endereco enderDest; //Endereço do destinatario
     private String indIEDest; // Indicador da Inscrição Estadual do destinatário
 
     
-    public Destinatario(String xNome, String CPF, String indIEDest) {
+    public Destinatario(String xNome, String CPF, Endereco ender, String indIEDest) {
         this.xNome = xNome;
         this.CPF = CPF;
+        this.enderDest = ender;
         this.indIEDest = indIEDest;
     }
 

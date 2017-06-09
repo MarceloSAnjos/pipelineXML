@@ -16,6 +16,7 @@ public class TransporteNFe {
     
     private TransportadoraNFe transporta;
     private VolumeNFe vol;
+    private String modFrete = "0";
 
     public TransporteNFe(TransportadoraNFe transporta, VolumeNFe vol) {
         this.transporta = transporta;

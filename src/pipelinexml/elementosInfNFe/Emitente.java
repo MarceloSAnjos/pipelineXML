@@ -11,8 +11,8 @@ import pipelinexml.elementosInfNFe.Endereco;
  *
  * @author maeda
  */
-public class Emitente{
-    
+public class Emitente {
+
     private String CNPJ; // Número do CNPJ
     private String xNome; // Razão Social ou Nome
     private String xFant; // Nome Fantasia
@@ -20,6 +20,11 @@ public class Emitente{
     private String IEST; //Inscrição Estadual do Substituto Tributário
     private String CRT; // Código do Regime Tributário
     private Endereco enderEmit; // Endereco do emitente
+
+    public Emitente() {
+    }
+
+    ;
 
     public String getCNPJ() {
         return CNPJ;
@@ -77,15 +82,15 @@ public class Emitente{
         this.enderEmit = enderEmit;
     }
 
-    public Emitente(String CNPJ, String xNome, String xFant, String IE, String IEST, String CRT, Endereco enderEmit) {
+    public Emitente(String CNPJ, String xNome, String xFant, Endereco enderEmit, String IE, String IEST, String CRT) {
         this.CNPJ = CNPJ;
         this.xNome = xNome;
         this.xFant = xFant;
+        this.enderEmit = enderEmit;
         this.IE = IE;
         this.IEST = IEST;
         this.CRT = CRT;
-        this.enderEmit = enderEmit;
+
     }
-    
-    
+
 }

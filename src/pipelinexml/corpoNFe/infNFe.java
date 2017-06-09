@@ -20,6 +20,8 @@ import pipelinexml.elementosInfNFe.TransporteNFe;
  */
 public class infNFe {
     
+    public infNFe(){};
+    
     private IdentificadorNFe ide;
     private Emitente emit;
     private Destinatario dest;
@@ -27,16 +29,21 @@ public class infNFe {
     private TotalNFe total;
     private TransporteNFe transp;
     private InformacaoAdicionalNFe infAdic;
+    
+    
+    
 
     public infNFe(IdentificadorNFe ide, Emitente emit, Destinatario dest, DetalhesNFe det, TotalNFe total, TransporteNFe transp, InformacaoAdicionalNFe infAdic) {
-        this.ide = ide;
-        this.emit = emit;
-        this.dest = dest;
-        this.det = det;
+        this.ide = ide; //OK
+        this.emit = emit; // OK
+        this.dest = dest;// OK
+        this.det = det; // OK
         this.total = total;
         this.transp = transp;
         this.infAdic = infAdic;
     }
+    
+    
 
     public IdentificadorNFe getIde() {
         return ide;

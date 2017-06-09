@@ -11,6 +11,9 @@ package pipelinexml.elementosSignature;
  */
 public class SignedInfo {
     
+    
+    public SignedInfo(){};
+    
     private String CanonicalizationMethod;
     private String SignatureMethod;
     private Reference Reference;

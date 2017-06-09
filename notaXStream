@@ -1,0 +1,18 @@
+<nfeProc>
+  <NFe>
+    <infNFe/>
+    <Signature/>
+  </NFe>
+  <protNFe>
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>14_0_8</verAplic>
+      <chNFe>31161109339936000973550110003363261533957738</chNFe>
+      <dhRecbti>2016-11-03T15:42:57-02:00</dhRecbti>
+      <nProt>131162347528667</nProt>
+      <digVal>ZXokK2gndKZWk7n4VEesQ5kQkEA=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

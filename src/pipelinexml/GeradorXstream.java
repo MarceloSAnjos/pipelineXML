@@ -5,26 +5,35 @@
  */
 package pipelinexml;
 
- import java.io.FileWriter;  
- import java.io.IOException;  
- import com.thoughtworks.xstream.XStream;  
+import java.io.FileWriter;
+import java.io.IOException;
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.DomDriver;
 
 /**
  *
  * @author maeda
  */
 public final class GeradorXstream {
+
+    private static XStream xstream = null;
+
+    private static NotaCompletaNFe nfeProc = new NotaCompletaNFe();
     
-     private XStream xstream = null;  
-     private GeradorXstream(){  
-         xstream = new XStream();  
-         xstream.ignoreUnknownElements(); 
-     }
-     
-        public void toXMLFile(Object objTobeXMLTranslated, String fileName ) throws IOException {  
-         FileWriter writer = new FileWriter(fileName);  
-         xstream.toXML(objTobeXMLTranslated, writer);  
-         writer.close();  
-     }  
+    
+
+    public GeradorXstream() throws IOException {
+        xstream = new XStream(new DomDriver());
+        xstream.ignoreUnknownElements();
+        xstream.alias("nfeProc", NotaCompletaNFe.class);
+        toXMLFile(nfeProc,"notaXStream");
+    }
+
+    public static void toXMLFile(Object objTobeXMLTranslated, String fileName) throws IOException {
+        FileWriter writer = new FileWriter(fileName);
+        xstream.toXML(objTobeXMLTranslated, writer);
+        writer.close();
+    }
+
     
 }

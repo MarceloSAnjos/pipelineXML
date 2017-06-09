@@ -18,6 +18,8 @@ public class Signature {
     private SignedInfo SignedInfo;
     private SignatureValue SignatureValue;
     private KeyInfo KeyInfo;
+    
+    public Signature(){};
 
     public Signature(SignedInfo SignedInfo, SignatureValue SignatureValue, KeyInfo KeyInfo) {
         this.SignedInfo = SignedInfo;

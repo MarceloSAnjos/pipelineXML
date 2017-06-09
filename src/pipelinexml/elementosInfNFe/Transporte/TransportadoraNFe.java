@@ -10,11 +10,8 @@ package pipelinexml.elementosInfNFe.Transporte;
  * @author maeda
  */
 public class TransportadoraNFe {
-    String xNome; // Nome da transportadora
 
-    public TransportadoraNFe(String xNome) {
-        this.xNome = xNome;
-    }
+    String xNome = "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS"; // Nome da transportadora
 
     public String getxNome() {
         return xNome;
@@ -23,6 +20,5 @@ public class TransportadoraNFe {
     public void setxNome(String xNome) {
         this.xNome = xNome;
     }
-    
-    
+
 }

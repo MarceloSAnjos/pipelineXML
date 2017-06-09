@@ -11,6 +11,8 @@ package pipelinexml.elementosSignature;
  */
 public class SignatureValue {
     
+    public SignatureValue(){};
+    
     private String valor;
 
     public SignatureValue(String valor) {

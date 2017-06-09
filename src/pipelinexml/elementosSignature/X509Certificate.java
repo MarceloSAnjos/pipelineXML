@@ -11,6 +11,8 @@ package pipelinexml.elementosSignature;
  */
 public class X509Certificate {
     
+    public X509Certificate(){};
+    
     private String certificado;
 
     public X509Certificate(String certificado) {

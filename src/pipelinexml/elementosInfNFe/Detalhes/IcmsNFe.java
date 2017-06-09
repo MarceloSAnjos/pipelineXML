@@ -13,7 +13,8 @@ public class IcmsNFe {
     
     private Icms00 ICMS00;
 
-    public IcmsNFe() {
+    public IcmsNFe(Icms00 icms) {
+        this.ICMS00 = icms;
     }
 
     public Icms00 getIcms00() {

@@ -11,8 +11,12 @@ package pipelinexml.elementosSignature;
  */
 public class Transforms {
     
+    
+    
     private String Transform;
     private String Transform2;
+    
+    public Transforms(){};
 
     public Transforms(String Transform, String Transform2) {
         this.Transform = Transform;

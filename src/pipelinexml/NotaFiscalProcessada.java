@@ -9,14 +9,12 @@ package pipelinexml;
  *
  * @author maeda
  */
-public class NotaCompletaNFe {
+public class NotaFiscalProcessada {
     
-    private NotaFiscalEletronica NFe = new NotaFiscalEletronica();
-    private ProtocoloNFe protNFe = new ProtocoloNFe();
-    
-    public NotaCompletaNFe(){};
+    private NotaFiscalEletronica NFe;
+    private ProtocoloNFe protNFe;
 
-    public NotaCompletaNFe(NotaFiscalEletronica NFe, ProtocoloNFe protNFe) {
+    public NotaFiscalProcessada(NotaFiscalEletronica NFe, ProtocoloNFe protNFe) {
         this.NFe = NFe;
         this.protNFe = protNFe;
     }
@@ -36,7 +34,6 @@ public class NotaCompletaNFe {
     public void setProtNFe(ProtocoloNFe protNFe) {
         this.protNFe = protNFe;
     }
-    
     
     
 }

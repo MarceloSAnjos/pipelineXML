@@ -11,7 +11,9 @@ package pipelinexml.elementosSignature;
  */
 public class KeyInfo {
     
-    private X509Data X509Data;
+    private X509Data X509Data = new X509Data();
+    
+    public KeyInfo(){};
 
     public KeyInfo(X509Data X509Data) {
         this.X509Data = X509Data;

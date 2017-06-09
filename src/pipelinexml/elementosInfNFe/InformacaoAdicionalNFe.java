@@ -12,11 +12,9 @@ import pipelinexml.elementosInfNFe.InformacaoAdicional.InformacaoComplementar;
  * @author maeda
  */
 public class InformacaoAdicionalNFe {
-    private InformacaoComplementar infCpl;
 
-    public InformacaoAdicionalNFe(InformacaoComplementar infCpl) {
-        this.infCpl = infCpl;
-    }
+    private InformacaoComplementar infCpl = new InformacaoComplementar();
+
 
     public InformacaoComplementar getInfCpl() {
         return infCpl;

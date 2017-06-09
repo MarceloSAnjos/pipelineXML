@@ -20,6 +20,7 @@ public class ProdutoNFe {
     private String uCom; // Unidade comercial 
     private String qCom; //Quantidade Comercial  do produto, alterado para aceitar de 0 a 4 casas decimais e 11 inteiros.
     private String vUnCom; // Valor unitário de comercialização  - alterado para aceitar 0 a 10 casas decimais e 11 inteiros
+    private String vProd; // Valor do produto
     private String cEANTrib; // GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou código de barras
     private String uTrib; // Unidade Tributável
     private String qTrib; // Quantidade Tributável - alterado para aceitar de 0 a 4 casas decimais e 11 inteiros
@@ -27,7 +28,7 @@ public class ProdutoNFe {
     private String vFrete; // Valor Total do Frete
     private String indTot; // Este campo deverá ser preenchido com: 0 – o valor do item (vProd) não compõe o valor total da NF-e (vProd)  1  – o valor do item (vProd) compõe o valor total da NF-e (vProd)
 
-    public ProdutoNFe(String cProd, String cEAN, String xProd, String NCM, String CFOP, String uCom, String qCom, String vUnCom, String cEANTrib, String uTrib, String qTrib, String vUnTrib, String vFrete, String indTot) {
+    public ProdutoNFe(String cProd, String cEAN, String xProd, String NCM, String CFOP, String uCom, String qCom, String vUnCom, String vProd, String cEANTrib, String uTrib, String qTrib, String vUnTrib, String vFrete, String indTot) {
         this.cProd = cProd;
         this.cEAN = cEAN;
         this.xProd = xProd;
@@ -36,6 +37,7 @@ public class ProdutoNFe {
         this.uCom = uCom;
         this.qCom = qCom;
         this.vUnCom = vUnCom;
+        this.vProd = vProd;
         this.cEANTrib = cEANTrib;
         this.uTrib = uTrib;
         this.qTrib = qTrib;
@@ -43,6 +45,8 @@ public class ProdutoNFe {
         this.vFrete = vFrete;
         this.indTot = indTot;
     }
+
+  
 
 
     public String getcProd() {
