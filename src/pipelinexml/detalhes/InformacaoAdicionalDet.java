@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pipelinexml;
+package pipelinexml.detalhes;
 
 /**
  *
  * @author maeda
  */
-public class InformacaoAdicionalNFe {
+public class InformacaoAdicionalDet {
     
     private String infAdProd;
 
-    public InformacaoAdicionalNFe(String infAdProd) {
+    public InformacaoAdicionalDet(String infAdProd) {
         this.infAdProd = infAdProd;
     }
 

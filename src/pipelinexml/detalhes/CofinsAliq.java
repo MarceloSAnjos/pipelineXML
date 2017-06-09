@@ -3,24 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pipelinexml;
+package pipelinexml.detalhes;
 
 /**
  *
  * @author maeda
  */
-public class IpiTrib {
+public class CofinsAliq {
     
     private String CST;
     private String vBC;
-    private String pIPI;
-    private String vIPI;
+    private String pCOFINS;
+    private String vCOFINS;
 
-    public IpiTrib(String CST, String vBC, String pIPI, String vIPI) {
+    public CofinsAliq(String CST, String vBC, String pCOFINS, String vCOFINS) {
         this.CST = CST;
         this.vBC = vBC;
-        this.pIPI = pIPI;
-        this.vIPI = vIPI;
+        this.pCOFINS = pCOFINS;
+        this.vCOFINS = vCOFINS;
     }
 
     public String getCST() {
@@ -39,20 +39,20 @@ public class IpiTrib {
         this.vBC = vBC;
     }
 
-    public String getpIPI() {
-        return pIPI;
+    public String getpCOFINS() {
+        return pCOFINS;
     }
 
-    public void setpIPI(String pIPI) {
-        this.pIPI = pIPI;
+    public void setpCOFINS(String pCOFINS) {
+        this.pCOFINS = pCOFINS;
     }
 
-    public String getvIPI() {
-        return vIPI;
+    public String getvCOFINS() {
+        return vCOFINS;
     }
 
-    public void setvIPI(String vIPI) {
-        this.vIPI = vIPI;
+    public void setvCOFINS(String vCOFINS) {
+        this.vCOFINS = vCOFINS;
     }
     
     

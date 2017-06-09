@@ -5,6 +5,7 @@
  */
 package pipelinexml;
 
+import pipelinexml.elementosInfNFe.IdentificadorNFe;
 import java.io.File;
 
 import javax.xml.bind.JAXBContext;
