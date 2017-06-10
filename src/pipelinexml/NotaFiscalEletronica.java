@@ -36,6 +36,8 @@ import pipelinexml.elementosInfNFe.Transporte.VolumeNFe;
  *
  * @author maeda
  */
+
+
 public class NotaFiscalEletronica {
 
     private infNFe infNFe;

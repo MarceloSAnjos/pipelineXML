@@ -13,7 +13,7 @@ package pipelinexml;
 import javax.xml.bind.annotation.*;
 
 
-@XmlRootElement(name = "nota")
+@XmlRootElement(name = "nfeProc")
 public class NotaCompletaNFe {
 
     

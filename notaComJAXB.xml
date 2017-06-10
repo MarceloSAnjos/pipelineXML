@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<nota>
+<nfeProc>
     <NFe>
         <infNFe>
             <dest>
@@ -155,4 +155,4 @@
             <xMotivo>Autorizado o uso da NF-e</xMotivo>
         </infProt>
     </protNFe>
-</nota>
+</nfeProc>
