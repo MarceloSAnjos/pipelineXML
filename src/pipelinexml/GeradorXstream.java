@@ -26,7 +26,7 @@ public final class GeradorXstream {
         xstream = new XStream(new DomDriver());
         xstream.ignoreUnknownElements();
         xstream.alias("nfeProc", NotaCompletaNFe.class);
-        toXMLFile(nfeProc,"notaXStream");
+        toXMLFile(nfeProc,"notaXStream.xml");
     }
 
     public static void toXMLFile(Object objTobeXMLTranslated, String fileName) throws IOException {
