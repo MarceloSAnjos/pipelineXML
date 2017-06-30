@@ -618,16 +618,55 @@ public class GeradorDOM {
             vNF.appendChild(doc.createTextNode("254.40"));
             ICMSTot.appendChild(vNF);
             
+            /**
+             * FIM DAS INFORMACOES DO TOTAL DE VALORES
+             */
             
             
 
             // Elemento Informações da transportadora do produto vendido na Nota Fiscal Eletronica
             Element transp = doc.createElement("transp");
             infNFe.appendChild(transp);
+            
+            Element modFrete = doc.createElement("modFrete");
+            modFrete.appendChild(doc.createTextNode("0"));
+            transp.appendChild(modFrete);
+            
+            Element transporta = doc.createElement("transporta");
+            transp.appendChild(transporta);
+            
+            
+            Element xNomeTrans = doc.createElement("xNome");
+            xNomeTrans.appendChild(doc.createTextNode("EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS"));
+            transporta.appendChild(xNomeTrans);
+            
+            Element vol = doc.createElement("vol");
+            transp.appendChild(vol);
+            
+            Element qVol = doc.createElement("qVol");
+            qVol.appendChild(doc.createTextNode("1"));
+            vol.appendChild(qVol);
+            
+            Element pesoL = doc.createElement("pesoL");
+            pesoL.appendChild(doc.createTextNode("0.690"));
+            vol.appendChild(pesoL);
+            
+            Element pesoB = doc.createElement("pesoB");
+            pesoB.appendChild(doc.createTextNode("0.690"));
+            vol.appendChild(pesoB);
+            
+            
+             Element infAdic2 = doc.createElement("infAdic");
+            transp.appendChild(infAdic2);
+            
+            Element infCpl = doc.createElement("infCpl");
+            infCpl.appendChild(doc.createTextNode("Conf.lei 12741/12 a carga trib.do prod.desta NF, e aprox.36% / Pedido: 18004452493  Pedido interno: 392529513 / Condicoes de Pagto:  MASTERCARD = 254,40 / B.C.ICMS Dest: R$ 254,40 / V.T.ICMS UF Rem: R$ 9,16 / V.T.ICMS UF Dest: R$ 6,11"));
+            infAdic2.appendChild(infCpl);
+            
 
             // Elemento Informações Adicionais da Nota Fiscal Eletronica
-            Element infAdic = doc.createElement("infAdic");
-            infNFe.appendChild(infAdic);
+            Element infAdicional2 = doc.createElement("infAdic");
+            infNFe.appendChild(infAdicional2);
 
             /**
              * FIM DA ESTRUTURA BASICA DE INFORMACOES DA NFe
@@ -639,11 +678,44 @@ public class GeradorDOM {
             // Elemento Assinatura Digital da Nota Fiscal Eletronica
             Element Signature = doc.createElement("Signature");
             NFe.appendChild(Signature);
+            
+            Element SignedInfo = doc.createElement("SignedInfo");
+            Signature.appendChild(SignedInfo);
+            
+            Element SignatureMethod = doc.createElement("SignatureMethod");
+            Signature.appendChild(SignatureMethod);
+            
+            Element Reference = doc.createElement("Reference");
+            Signature.appendChild(Reference);
+            
+            Element Transforms = doc.createElement("Transforms");
+            Reference.appendChild(Transforms);
+            
+            Element Transform = doc.createElement("Transform");
+            Transforms.appendChild(Transform);
+            
+            Element DigestMethod = doc.createElement("DigestMethod");
+            Signature.appendChild(DigestMethod);
+            
+            Element DigestValue = doc.createElement("Transforms");
+            Reference.appendChild(Transforms);
+            
+           
+            Element SignatureValue = doc.createElement("SignatureValue");
+            
+            Signature.appendChild(SignatureValue);
+            
+            
+            
 
             /**
              * FIM DAS PROPRIEDADES DA ASSINATURA DIGITAL
              */
-            //=================================================================
+            
+
+//=================================================================
+            
+            
             /**
              * INICIO DAS PROPRIEDADES DO PROTOCOLO DA NOTA FISCAL
              */
@@ -657,30 +729,43 @@ public class GeradorDOM {
 
             // Tipo de Ambiente da venda
             Element tpAmb = doc.createElement("tpAmb");
+            tpAmb.appendChild(doc.createTextNode("1"));
             infProt.appendChild(tpAmb);
+            
+            //Element chNFe
+            
+            Element chNFe = doc.createElement("chNFe");
+            chNFe.appendChild(doc.createTextNode("31161109339936000973550110003363261533957738"));
+            infProt.appendChild(chNFe);
 
             // Versão do aplicativo do Ambiente da venda
             Element verAplic = doc.createElement("verAplic");
+            verAplic.appendChild(doc.createTextNode("14_0_8"));
             infProt.appendChild(verAplic);
 
             // Data e hora do recebimento do protocolo de geração da nota fiscal
             Element dhRecbto = doc.createElement("dhRecbto");
+            dhRecbto.appendChild(doc.createTextNode("2016-11-03T15:42:57-02:00"));
             infProt.appendChild(dhRecbto);
 
             // Numero de protocolo de geração da nota fiscal
             Element nProt = doc.createElement("nProt");
+            nProt.appendChild(doc.createTextNode("131162347528667"));
             infProt.appendChild(nProt);
 
             // Chave da geração da nota fiscal
             Element digVal = doc.createElement("digVal");
+            digVal.appendChild(doc.createTextNode("2016-11-03T15:42:57-02:00"));
             infProt.appendChild(digVal);
 
             // Código de status de geração da nota fiscal
             Element cStat = doc.createElement("cStat");
+            cStat.appendChild(doc.createTextNode("100"));
             infProt.appendChild(cStat);
 
             // Motivo do protocolo de geração da nota fiscal
             Element xMotivo = doc.createElement("xMotivo");
+            xMotivo.appendChild(doc.createTextNode("Autorizado o uso da NF-e"));
             infProt.appendChild(xMotivo);
 
             /**
