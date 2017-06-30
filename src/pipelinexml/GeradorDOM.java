@@ -351,14 +351,275 @@ public class GeradorDOM {
             indTot.appendChild(doc.createTextNode("1"));
             prod.appendChild(indTot);
 
+            //Elemento Imposto
+            Element imposto = doc.createElement("imposto");
+            det.appendChild(imposto);
+
+            Element ICMS = doc.createElement("ICMS");
+            imposto.appendChild(ICMS);
+
+            Element ICMS00 = doc.createElement("ICMS00");
+            ICMS.appendChild(ICMS00);
+
+            Element orig = doc.createElement("orig");
+            orig.appendChild(doc.createTextNode("0"));
+            ICMS00.appendChild(orig);
+
+            Element CST = doc.createElement("CST");
+            CST.appendChild(doc.createTextNode("00"));
+            ICMS00.appendChild(CST);
+
+            Element modBC = doc.createElement("modBC");
+            modBC.appendChild(doc.createTextNode("3"));
+            ICMS00.appendChild(modBC);
+
+            Element vBC = doc.createElement("vBC");
+            vBC.appendChild(doc.createTextNode("254.40"));
+            ICMS00.appendChild(vBC);
+
+            Element pICMS = doc.createElement("pICMS");
+            pICMS.appendChild(doc.createTextNode("12.00"));
+            ICMS00.appendChild(pICMS);
+
+            Element vICMS = doc.createElement("vICMS");
+            vICMS.appendChild(doc.createTextNode("30.53"));
+            ICMS00.appendChild(vICMS);
+
+            // Relativo ao IPI da nota
+            Element IPI = doc.createElement("IPI");
+            imposto.appendChild(IPI);
+
+            Element cEnq = doc.createElement("cEnq");
+            cEnq.appendChild(doc.createTextNode("999"));
+            IPI.appendChild(cEnq);
+
+            Element IPITrib = doc.createElement("IPITrib");
+
+            IPI.appendChild(IPITrib);
+
+            Element CST2 = doc.createElement("CST");
+            CST2.appendChild(doc.createTextNode("0.00"));
+            IPITrib.appendChild(CST2);
+
+            Element vBC2 = doc.createElement("vBC");
+            vBC2.appendChild(doc.createTextNode("254.40"));
+            IPITrib.appendChild(vBC2);
+            
+            Element pIPI = doc.createElement("pIPI");
+            pIPI.appendChild(doc.createTextNode("0.00"));
+            IPITrib.appendChild(pIPI);
+            
+            Element vIPI = doc.createElement("vIPI");
+            vIPI.appendChild(doc.createTextNode("0.00"));
+            IPITrib.appendChild(vIPI);
+            
+            /**
+             * FIM DAS INFORMACOES DO IPI
+             */
+            
+            // Informação referente ao PIS
+            
+            Element PIS = doc.createElement("PIS");
+            imposto.appendChild(PIS);
+            
+            
+            Element PISAliq =  doc.createElement("PISAliq");
+            PIS.appendChild(PISAliq);
+            
+            
+            Element CSTPIS = doc.createElement("CST");
+            CSTPIS.appendChild(doc.createTextNode("01"));
+            PISAliq.appendChild(CSTPIS);
+            
+            Element vBCPIS = doc.createElement("vBC");
+            vBCPIS.appendChild(doc.createTextNode("254.40"));
+            PISAliq.appendChild(vBCPIS);
+            
+            Element pPIS = doc.createElement("pPIS");
+            pPIS.appendChild(doc.createTextNode("1.65"));
+            PISAliq.appendChild(pPIS);
+            
+            Element vPIS = doc.createElement("vPIS");
+            vPIS.appendChild(doc.createTextNode("4.20"));
+            PISAliq.appendChild(vPIS);
+            
+            /**
+             * FIM DAS INFORMACOES REFERENTES AO PIS
+             */
+            
+            // INICIO DAS INFORMACOES REFERENTES AO COFINS
+            
+            Element COFINS = doc.createElement("COFINS");
+            imposto.appendChild(COFINS);
+            
+            
+            Element COFINSAliq =  doc.createElement("COFINSAliq");
+            COFINS.appendChild(COFINSAliq);
+            
+            Element CSTCOFINS = doc.createElement("CST");
+            CSTCOFINS.appendChild(doc.createTextNode("01"));
+            COFINSAliq.appendChild(CSTCOFINS);
+            
+            Element vBCCOFINS = doc.createElement("vBC");
+            vBCCOFINS.appendChild(doc.createTextNode("254.40"));
+            COFINSAliq.appendChild(vBCCOFINS);
+            
+            Element pCOFINS = doc.createElement("pCOFINS");
+            pCOFINS.appendChild(doc.createTextNode("7.60"));
+            COFINSAliq.appendChild(pCOFINS);
+            
+            Element vCOFINS = doc.createElement("vCOFINS");
+            vPIS.appendChild(doc.createTextNode("19.33"));
+            COFINSAliq.appendChild(vPIS);
+            
+            /**
+             * FIM DOS ELEMENTOS DO COFINS
+             */
+            
+            // INICIO DAS INFORMAÇOES DO ICMS NO ESTADO DO DESTINATARIO
+            
+            Element ICMSUFDest = doc.createElement("ICMSUFDest");
+            imposto.appendChild(ICMSUFDest);
+            
+            Element vBCUFDest = doc.createElement("vBCUFDest");
+            vBCUFDest.appendChild(doc.createTextNode("254.50"));
+            ICMSUFDest.appendChild(vBCUFDest);
+            
+            Element pFCUFDest = doc.createElement("pFCPUFDest");
+            pFCUFDest.appendChild(doc.createTextNode("0.00"));
+            ICMSUFDest.appendChild(pFCUFDest);
+            
+            Element pICMSUFDest = doc.createElement("pICMSUFDest");
+            pICMSUFDest.appendChild(doc.createTextNode("18.00"));
+            ICMSUFDest.appendChild(pICMSUFDest);
+            
+            Element pICMSInter = doc.createElement("pICMSInter");
+            pICMSInter.appendChild(doc.createTextNode("12.00"));
+            ICMSUFDest.appendChild(pICMSInter);
+            
+            Element pICMSInterPart = doc.createElement("pICMSInterPart");
+            pICMSInterPart.appendChild(doc.createTextNode("40.00"));
+            ICMSUFDest.appendChild(pICMSInterPart);
+            
+            Element vFCPUFDest = doc.createElement("vFCPUFDest");
+            vFCPUFDest.appendChild(doc.createTextNode("0.00"));
+            ICMSUFDest.appendChild(vFCPUFDest);
+            
+            Element vICMSUFDest = doc.createElement("vICMSUFDest");
+            vICMSUFDest.appendChild(doc.createTextNode("6.11"));
+            ICMSUFDest.appendChild(vICMSUFDest);
+            
+            Element vICMSUFRemet = doc.createElement("vICMSUFRemet");
+            vICMSUFRemet.appendChild(doc.createTextNode("9.16"));
+            ICMSUFDest.appendChild(vICMSUFRemet);
+            
+            /**
+             * FIM DAS INFORMACOES DO ICMS INTER
+             */
+            
+            /**
+             * FIM DAS INFORMACOES DE IMPOSTO DA NOTA FISCAL
+             * 
+             */
+            
+            Element infAdProd = doc.createElement("infAdProd");
+            infAdProd.appendChild(doc.createTextNode("EAN 4057284362269  - Preto+Prata"));
+            det.appendChild(infAdProd);
+            
             /**
              *
              * FIM DO ELEMENTO DE DETALHE DA NOTA FISCAL
              *
              */
+            
+            
+            
             // Elemento Informações do total da Nota Fiscal Eletronica
             Element total = doc.createElement("total");
             infNFe.appendChild(total);
+            
+            Element ICMSTot = doc.createElement("ICMSTot");
+            total.appendChild(ICMSTot);
+            
+            Element vBCTot = doc.createElement("vBC");
+            vBCTot.appendChild(doc.createTextNode("254.40"));
+            ICMSTot.appendChild(vBCTot);
+            
+            Element vICMSTot = doc.createElement("vICMS");
+            vICMSTot.appendChild(doc.createTextNode("30.53"));
+            ICMSTot.appendChild(vICMSTot);
+            
+            Element vICMSDeson = doc.createElement("vICMSDeson");
+            vICMSDeson.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vICMSDeson);
+            
+            Element vFCPUFDest2 = doc.createElement("vFCPUFDest");
+            vFCPUFDest2.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vFCPUFDest2);
+            
+            Element vICMSUFDest2 = doc.createElement("vICMSUFDest");
+            vICMSUFDest2.appendChild(doc.createTextNode("6.11"));
+            ICMSTot.appendChild(vICMSUFDest2);
+            
+            Element vICMSRemet = doc.createElement("vICMSRemet");
+            vICMSRemet.appendChild(doc.createTextNode("9.16"));
+            ICMSTot.appendChild(vICMSRemet);
+            
+            Element vBCST = doc.createElement("vBCST");
+            vBCST.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vBCST);
+            
+            Element vST = doc.createElement("vST");
+            vST.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vST);
+            
+            Element vProd2 = doc.createElement("vProd");
+            vProd2.appendChild(doc.createTextNode("239.90"));
+            ICMSTot.appendChild(vProd2);
+            
+            Element vFrete2 = doc.createElement("vFrete");
+            vFrete2.appendChild(doc.createTextNode("14.50"));
+            ICMSTot.appendChild(vFrete2);
+            
+            Element vSeg = doc.createElement("vSeg");
+            vSeg.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vSeg);
+            
+            Element vDesc = doc.createElement("vDesc");
+            vDesc.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vDesc);
+            
+            
+            Element vII = doc.createElement("vII");
+            vII.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vII);
+            
+            Element vIPI2 = doc.createElement("vIPI");
+            vIPI2.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vIPI2);
+            
+            
+            Element vPIS2 = doc.createElement("vPIS");
+            vPIS2.appendChild(doc.createTextNode("4.20"));
+            ICMSTot.appendChild(vPIS2);
+            
+            
+            Element vCOFINS2 = doc.createElement("vCOFINS");
+            vCOFINS2.appendChild(doc.createTextNode("19.33"));
+            ICMSTot.appendChild(vCOFINS2);
+            
+            
+            Element vOutro = doc.createElement("vOutro");
+            vOutro.appendChild(doc.createTextNode("0.00"));
+            ICMSTot.appendChild(vOutro);
+            
+            
+            Element vNF = doc.createElement("vNF");
+            vNF.appendChild(doc.createTextNode("254.40"));
+            ICMSTot.appendChild(vNF);
+            
+            
+            
 
             // Elemento Informações da transportadora do produto vendido na Nota Fiscal Eletronica
             Element transp = doc.createElement("transp");
