@@ -18,15 +18,13 @@ public final class GeradorXstream {
 
     private static XStream xstream = null;
 
-    private static NotaCompletaNFe nfeProc = new NotaCompletaNFe();
-    
+
     
 
-    public GeradorXstream() throws IOException {
+    public GeradorXstream(NotaCompletaNFe nfeProc) throws IOException {
         xstream = new XStream(new DomDriver());
         xstream.ignoreUnknownElements();
         xstream.alias("nfeProc", NotaCompletaNFe.class);
-        toXMLFile(nfeProc,"notaXStream.xml");
     }
 
     public static void toXMLFile(Object objTobeXMLTranslated, String fileName) throws IOException {

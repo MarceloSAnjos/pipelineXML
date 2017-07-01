@@ -27,7 +27,6 @@ public class GeradorDOM {
 
     public GeradorDOM() {
 
-        geraXML();
     }
 
     public static void geraXML() {
@@ -787,7 +786,6 @@ public class GeradorDOM {
             // StreamResult result = new StreamResult(System.out);
             transformer.transform(source, result);
 
-            System.out.println("File saved!");
 
             /**
              * GERAÇÃO DE NOTA FISCAL MANUALMENTE

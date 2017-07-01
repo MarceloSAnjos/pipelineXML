@@ -22,17 +22,15 @@ public class GeradorJAXB {
     
     private static final String FILE_NAME = "notaComJAXB.xml";
     
-    private static NotaCompletaNFe nfeProc = new NotaCompletaNFe();
 
 
     public GeradorJAXB(){
         
-        jaxbObjectToXML(nfeProc);
         
     }
 
 
-    private static void jaxbObjectToXML(NotaCompletaNFe nota) {
+    public static void jaxbObjectToXML(NotaCompletaNFe nota) {
 
         try {
             JAXBContext context = JAXBContext.newInstance(NotaCompletaNFe.class);
